@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+
+<!-- Character dialogue -->
+<dialogaffirmative>Affirmative, sir.</dialogaffirmative>
+<dialogaffirmative>Got it.</dialogaffirmative>
+<dialogaffirmative>Sure.</dialogaffirmative>
+<dialognegative>No can do.</dialognegative>
+<dialognegative>Unable.</dialognegative>
+<dialogcannotreach>I can't reach that location, boss.</dialogcannotreach>
+<dialogreactorfuel>Loading a cancer stick.</dialogreactorfuel>
+<dialogreactortaken>Step aside. I have the reactor handled.</dialogreactortaken>
+<dialogcantfindcontroller>I cannot use the [item].</dialogcantfindcontroller>
+<dialogloadturret>Reloading the [itemname].</dialogloadturret>
+<dialogfireturret>Firing.</dialogfireturret>
+<dialogfireturret>Time to distribute ammo like its Communism.</dialogfireturret>
+<dialogturrettargetdead>Target eliminated.</dialogturrettargetdead>
+<dialogturrettargetdead>Threat handled.</dialogturrettargetdead>
+<dialogchargebatteries>[itemname] charge rate set to [rate].</dialogchargebatteries>
+<dialogchargebatteries>[itemname] now has a charge rate of... uhh... [rate].</dialogchargebatteries>
+<dialognobatteries>Uh... where are the batteries?</dialognobatteries>
+<dialogstopchargingbatteries>Turning [itemname] off.</dialogstopchargingbatteries>
+<dialogleakfixed>Fixing leaks in [roomname] before we sink.</dialogleakfixed>
+<dialogleaksfixed>[roomname] will not be the reason why we sink anymore.</dialogleaksfixed>
+<dialogleaksfixed>[roomname] is patched up. Might want to check it at a city.</dialogleaksfixed>
+<dialogitemrepaired>[itemname] fixed within Order standards.</dialogitemrepaired>
+<dialoggetdivinggear>Putting on a suit.</dialoggetdivinggear>
+<dialoggetdivinggear>Suit needed, finding one.</dialoggetdivinggear>
+<dialoggetoxygentank>Oxygen needed. One moment, please.</dialoggetoxygentank>
+<dialoggetoxygentank>Fuck me, I need O2.</dialoggetoxygentank>
+<dialoglowoxygen>Oxygen low.</dialoglowoxygen>
+<dialoglowoxygen>Oxygen at about critical.</dialoglowoxygen>
+<dialogbleeding>Shit, I'm losing blood!</dialogbleeding>
+<dialogbleeding>Losing blood.</dialogbleeding>
+<dialogpressure>[roomname] has a shit ton of pressure building up.</dialogpressure>
+<dialogpressure>Attention all passengers: [roomname] is off-limits until someone fixes this big fucking hole.</dialogpressure>
+<dialogfindextinguisher>Quelling fire.</dialogfindextinguisher>
+<dialogfindextinguisher>Fire control inbound.</dialogfindextinguisher>
+<dialogputoutfire>Fire quelled.</dialogputoutfire>
+<dialogputoutfire>[roomname] no longer has a fire.</dialogputoutfire>
+<dialognofire>There isn't a fire here.</dialognofire>
+<dialognofire>Either there is no fire, or it was starved of oxygen.</dialognofire>
+<dialogsteeringtaken>Aye, clear away. I have this.</dialogsteeringtaken>
+<dialogsteeringtaken>You're going to piss me off if you don't move away.</dialogsteeringtaken>
+<dialogsonartarget>Blip on radar, due [direction].</dialogsonartarget>
+<dialogsonartarget>Watch due [direction]. I'm seeing something.</dialogsonartarget>
+<dialogsonartargetlarge>A really big fucking entity due [direction].</dialogsonartargetlarge>
+<dialogsonartargetlarge>Huge entity due [direction]. Get these Order-Certified guns on this motherfucker.</dialogsonartargetlarge>
+<dialogsonartargetmultiple>Unknowns coming in from due [direction].</dialogsonartargetmultiple>
+<dialogsonartargetmultiple>Around [count] unknowns due [direction]. Do civilians pass through here?</dialogsonartargetmultiple>
+<dialogfoundunconscioustarget>[targetname] is unconscious.</dialogfoundunconscioustarget>
+<dialogfoundunconscioustarget>[targetname] found unconscious in [roomname].</dialogfoundunconscioustarget>
+<dialoglistrequiredtreatments>Yo necesito [treatmentlist] pronto.</dialoglistrequiredtreatments>
+<dialoglistrequiredtreatments>I need to give medical ai to [targetname].</dialoglistrequiredtreatments>
+<dialogtargethealed>[targetname] is now doped on Order-Certified drugs.</dialogtargethealed>
+<dialogtargethealed>Frankenstein nicknamed "[targetname]" has arisen.</dialogtargethealed>
+<dialogcannotrepair>[itemname] cannot be repaired.</dialogcannotrepair>
+<dialogenemydown>Enemy down.</dialogenemydown>
+<dialogenemydown>Pop goes a weasel.</dialogenemydown>
+<dialogenemydown>There's a tally for my promotion.</dialogenemydown>
+<dialogenemydown>Enemy down. Where's my drink?</dialogenemydown>
+<dialognorepairtargets>It can wait.</dialognorepairtargets>
+<dialognorepairtargets>This shit don't need repairs.</dialognorepairtargets>
+<dialognopumps>These pumps are in working order.</dialognopumps>
+<dialognopumps>The pumps are fine, see for yourself.</dialognopumps>
+<dialognoenemies>Searching for target.</dialognoenemies>
+<dialognoleaks>You must be hallucinating.</dialognoleaks>
+<dialognoleaks>It's dry as hell here..</dialognoleaks>
+<dialogfoundwoundedtarget>Applying Order-Certified treatment on [targetname].</dialogfoundwoundedtarget>
+<dialogfoundwoundedtarget>[targetname] receving medical aid in [roomname].</dialogfoundwoundedtarget>
+<dialogfoundwoundedtarget>[targetname] failed penis inspection day.</dialogfoundwoundedtarget>
+<dialognorescuetargets>I'm not the creator of Jilly Juice. Don't treat me as such.</dialognorescuetargets>
+<dialognorescuetargets>I don't see anything that demands a doctor.</dialognorescuetargets>
+<dialogcannotreachtarget>Can't find [name]. You on radio by chance?</dialogcannotreachtarget>
+<dialogcannotreachplace>Location inaccessible.</dialogcannotreachplace>
+<dialogcannotreachfire>Yeaaaaah... no. I don't want to be burned alive.</dialogcannotreachfire>
+<dialogcannotreachfire>Fire in [name] is up for grabs. I ain't doing it.</dialogcannotreachfire>
+<dialogcannotreachleak>Leak at [name] is inaccessible.</dialogcannotreachleak>
+<dialogcannotreachpatient>[name] is at large from a doctor.</dialogcannotreachpatient>
+<dialogcannotreachpatient>[name] threw an apple at me.</dialogcannotreachpatient>
+<dialogcannotloadturret>I can't reload the [itemname].</dialogcannotloadturret>
+<dialogcannotloadturret>Where is our ammo?</dialogcannotloadturret>
+
+<dialog.cantupgrade>I can't upgrade this.</dialog.cantupgrade>
+<dialog.cantupgrade>Uh... no.</dialog.cantupgrade>
+<dialog.upgradepurchased>Good deal. The Order-Certified parts won't fail you.</dialog.upgradepurchased>
+<dialog.upgradepurchased>There's one less of a problem to worry about.</dialog.upgradepurchased>
+<dialog.upgradepurchased>Your next purchase won't have a coupon. Not that there's a Stamp Act or anything.</dialog.upgradepurchased>
+
+<dialogattackedbyfriendly>Red on Red, moron.</dialogattackedbyfriendly>
+<dialogattackedbyfriendly>Hey, how about you put that thing away?</dialogattackedbyfriendly>
+<dialogattackedbyfriendly>Dammit, dude! That hurt!</dialogattackedbyfriendly>
+<dialogenteroutpostwarning>Quit causing trouble and fuck off.</dialogenteroutpostwarning>
+<dialogenteroutpostwarning>Go.</dialogenteroutpostwarning>
+<dialogstealwarning>...Wanna hand that over?</dialogstealwarning>
+<dialogstealwarning>You know we saw that.</dialogstealwarning>
+<dialogstealwarning>You aren't clever. Put it back.</dialogstealwarning>
+
+<!-- Character orders -->
+<orderdialog.follow>[name], form up on me.</orderdialog.follow>
+<orderdialogself.follow>Forming up.</orderdialogself.follow>
+<orderdialogself.follow>On you.</orderdialogself.follow>
+<orderdialog.wait>Hold position.</orderdialog.wait>
+<orderdialog.wait>[name], hold position.</orderdialog.wait>
+<orderdialogself.wait>Waiting.</orderdialogself.wait>
+<orderdialogself.wait>Standing by.</orderdialogself.wait>
+<orderdialogself.wait>I'll set up a checkpoint while I'm at it.</orderdialogself.wait>
+<orderdialog.dismissed>At ease [name].</orderdialog.dismissed>
+<orderdialog.dismissed>Dismissed, [name].</orderdialog.dismissed>
+<orderdialogself.dismissed>I'll be sending myself off.</orderdialogself.dismissed>
+<orderdialog.operatereactor>Check the reactor.</orderdialog.operatereactor>
+<orderdialog.operatereactor>[name], surprise cancer stick inspection day.</orderdialog.operatereactor>
+<orderdialogself.operatereactor>Inspecting the cancer sticks.</orderdialogself.operatereactor>
+<orderdialogself.operatereactor>Yes, sir..</orderdialogself.operatereactor>
+<orderdialog.operatereactor.powerup>[name], do me a favour, and get that fucking reactor running.</orderdialog.operatereactor.powerup>
+<orderdialog.operatereactor.powerup>Flip the reactor switch, will someone?</orderdialog.operatereactor.powerup>
+<orderdialogself.operatereactor.powerup>Sure.</orderdialogself.operatereactor.powerup>
+<orderdialogself.operatereactor.powerup>Flipping the switch.</orderdialogself.operatereactor.powerup>
+<orderdialog.operatereactor.shutdown>[name], kill the reactor.</orderdialog.operatereactor.shutdown>
+<orderdialogself.operatereactor.shutdown>Someone turn off the reactor.</orderdialogself.operatereactor.shutdown>
+<orderdialogself.operateweapons>Operating weapons.</orderdialogself.operateweapons>
+<orderdialogself.operateweapons>Manning the guns.</orderdialogself.operateweapons>
+<orderdialog.operateweapons.fireatwill>Fire at will, [name].</orderdialog.operateweapons.fireatwill>
+<orderdialogself.operateweapons.fireatwill>Affirmative.</orderdialogself.operateweapons.fireatwill>
+<orderdialogself.operateweapons.fireatwill>Showing zero mercy.</orderdialogself.operateweapons.fireatwill>
+<orderdialogself.operateweapons.fireatwill>Locked and loaded.</orderdialogself.operateweapons.fireatwill>
+<orderdialog.operateweapons.holdfire>Hold fire, [name].</orderdialog.operateweapons.holdfire>
+<orderdialogself.operateweapons.holdfire>Affirmative, showing neutrality.</orderdialogself.operateweapons.holdfire>
+<orderdialog.steer>[name], take the helm.</orderdialog.steer>
+<orderdialog.steer>I need a rest, [name]. Take us somewhere.</orderdialog.steer>
+<orderdialogself.steer>I didn't get my license, but sure.</orderdialogself.steer>
+<orderdialogself.steer>Finally, something interesting to do.</orderdialogself.steer>
+<orderdialogself.steer>Oh, cool. Thanks.</orderdialogself.steer>
+<orderdialog.steer.maintainposition>Hold our current position.</orderdialog.steer.maintainposition>
+<orderdialog.steer.maintainposition>Stay here.</orderdialog.steer.maintainposition>
+<orderdialogself.steer.maintainposition>Holding.</orderdialogself.steer.maintainposition>
+<orderdialogself.steer.maintainposition>Staying put.</orderdialogself.steer.maintainposition>
+<orderdialog.steer.navigateback>Bring us back.</orderdialog.steer.navigateback>
+<orderdialogself.steer.navigateback>Affirmative.</orderdialogself.steer.navigateback>
+<orderdialogself.steer.navigateback>Sure.</orderdialogself.steer.navigateback>
+<orderdialog.steer.navigatetodestination>Bring us to our destination, [name].</orderdialog.steer.navigatetodestination>
+<orderdialog.steer.navigatetodestination>Take us to point B and avoid ice spires, [name].</orderdialog.steer.navigatetodestination>
+<orderdialogself.steer.navigatetodestination>Taking us there.</orderdialogself.steer.navigatetodestination>
+<orderdialogself.steer.navigatetodestination>I'll hit the spires.</orderdialogself.steer.navigatetodestination>
+<orderdialog.fixleaks>We have a leak, [name].</orderdialog.fixleaks>
+<orderdialog.fixleaks>[name], patch our hull so we don't sink.</orderdialog.fixleaks>
+<orderdialogself.fixleaks>Patching hull.</orderdialogself.fixleaks>
+<orderdialog.extinguishfires>[name], quell that fire.</orderdialog.extinguishfires>
+<orderdialogself.extinguishfires>Fire brigade, enroute.</orderdialogself.extinguishfires>
+<orderdialogself.extinguishfires>Lovely... killing the fire.</orderdialogself.extinguishfires>
+<orderdialog.chargebatteries>Check the batteries, someone.</orderdialog.chargebatteries>
+<orderdialogself.chargebatteries>Checking batts.</orderdialogself.chargebatteries>
+<!--<orderdialog.chargebatteries.charge>[name], charge the batteries!</orderdialog.chargebatteries.charge>-->
+<!--<orderdialog.chargebatteries.charge>[name], make sure all batteries are charged!</orderdialog.chargebatteries.charge>-->
+<!--<orderdialogself.chargebatteries.charge>I'll charge the batteries!</orderdialogself.chargebatteries.charge>-->
+<!--<orderdialog.chargebatteries.stopcharging>[name], stop charging the batteries!</orderdialog.chargebatteries.stopcharging>-->
+<!--<orderdialogself.chargebatteries.stopcharging>I'll stop charging the batteries!</orderdialogself.chargebatteries.stopcharging>-->
+<orderdialog.pumpwater>[name] get the pumps running.</orderdialog.pumpwater>
+<orderdialog.pumpwater.pumpout>[name], pump out the water.</orderdialog.pumpwater.pumpout>
+<orderdialogself.pumpwater.pumpout>Pumping.</orderdialogself.pumpwater.pumpout>
+<orderdialog.pumpwater.stoppumping>Cut the pumps for a bit.</orderdialog.pumpwater.stoppumping>
+<orderdialogself.pumpwater.stoppumping>Sure.</orderdialogself.pumpwater.stoppumping>
+<orderdialog.rescue>[name], your time to do penis inspection day for us.</orderdialog.rescue>
+<orderdialog.rescue>[name], put your medical training to use.</orderdialog.rescue>
+<orderdialogself.rescue>Setting up penis inspection day in... wherever.</orderdialogself.rescue>
+<orderdialogself.rescue>Rescuing individuals in need.</orderdialogself.rescue>
+<orderdialog.repairsystems>We have some broken systems. [name]?</orderdialog.repairsystems>
+<orderdialog.repairsystems>[name], work on repairs.</orderdialog.repairsystems>
+<orderdialogself.repairsystems>I'll check it out.</orderdialogself.repairsystems>
+<orderdialogself.repairsystems>Sure.</orderdialogself.repairsystems>
+<!--<orderdialog.repairsystems.jobspecific>[name], repair damaged systems!</orderdialog.repairsystems.jobspecific>
+<orderdialog.repairsystems.jobspecific>[name], take care of broken devices!</orderdialog.repairsystems.jobspecific>
+<orderdialogself.repairsystems.jobspecific>I'll take care of broken devices!</orderdialogself.repairsystems.jobspecific>
+<orderdialog.repairsystems.all>[name], repair any damaged systems! I don't care if you don't have the skills—do your best!</orderdialog.repairsystems.all>
+<orderdialog.repairsystems.all>[name], try to fix any broken devices, even if it's something you're not trained for!</orderdialog.repairsystems.all>
+<orderdialog.repairsystems.all>[name], repair any damaged devices! Anything you can—I don't care about your training now!</orderdialog.repairsystems.all>
+<orderdialogself.repairsystems.all>I'll take care of broken devices!</orderdialogself.repairsystems.all>-->
+<orderdialog.reportfire>Fire spotted on my location.</orderdialog.reportfire>
+<orderdialog.reportfire>Big burning thingy in [roomname].</orderdialog.reportfire>
+<orderdialog.reportfire>Fire in violation of Order procedures located.</orderdialog.reportfire>
+<orderdialog.reportfire>Who set off a fire?</orderdialog.reportfire>
+<orderdialog.reportbreach>Hull breach, [roomname]. Probably should have it fixed.</orderdialog.reportbreach>
+<orderdialog.reportbreach>[roomname] has a big fucking hole.</orderdialog.reportbreach>
+<orderdialog.reportbreach>Blame your problems on [roomname], hull breach located.</orderdialog.reportbreach>
+<orderdialog.reportintruders>Something got into the [roomname].</orderdialog.reportintruders>
+<orderdialog.reportintruders>I don't like whoever or whatever is in [roomname].</orderdialog.reportintruders>
+<orderdialog.reportintruders>Unregistered Order personnel or aliens in [roomname].</orderdialog.reportintruders>
+<orderdialog.reportintruders>Did security not check the [roomname]? There's an intruder.</orderdialog.reportintruders>
+<orderdialog.reportbrokendevices>Something in [roomname] broke down.</orderdialog.reportbrokendevices>
+<orderdialog.reportbrokendevices>Who left these things unchecked in [roomname]? No wonder we have technical problems.</orderdialog.reportbrokendevices>
+<orderdialog.requestfirstaid>I need a medic in [roomname].</orderdialog.requestfirstaid>
+<orderdialog.requestfirstaid>Can I see a medic in [roomname]? Quickly?</orderdialog.requestfirstaid>
+<orderdialog.requestfirstaid>I need medical examination.</orderdialog.requestfirstaid>
+
+<orderdialog.fightintruders>Eliminate the intruders, [name].</orderdialog.fightintruders>
+<orderdialog.fightintruders>Cauterize these fuckers, [name].</orderdialog.fightintruders>
+<orderdialog.fightintruders>Put them to sleep.</orderdialog.fightintruders>
+<orderdialog.fightintruders>Engage at will.</orderdialog.fightintruders>
+<orderdialog.fightintruders>Remember Our Cause. Engage the enemy.</orderdialog.fightintruders>
+<orderdialog.fightintruders>Weapons free, [name].</orderdialog.fightintruders>
+<orderdialogself.fightintruders>Purging these fuckers from existence.</orderdialogself.fightintruders>
+<orderdialogself.fightintruders>Time to get my paycheck.</orderdialogself.fightintruders>
+<orderdialogself.fightintruders>Cauterizing the issue.</orderdialogself.fightintruders>
+<orderdialogself.fightintruders>Seeing these fuckers in hell.</orderdialogself.fightintruders>
+<orderdialog.repairelectrical>Do some electrical shit, [name].</orderdialog.repairelectrical>
+<orderdialog.repairelectrical>[name]. Guess what.</orderdialog.repairelectrical>
+<orderdialog.repairelectrical>[name], fix the junctions.</orderdialog.repairelectrical>
+<orderdialogself.repairelectrical>Fixing junctions and electrics.</orderdialogself.repairelectrical>
+<orderdialogself.repairelectrical>Fixing electrics.</orderdialogself.repairelectrical>
+<orderdialogself.repairelectrical>Applying the magic touch to the electrics.</orderdialogself.repairelectrical>
+<orderdialog.repairmechanical>[name], keep our hardware running.</orderdialog.repairmechanical>
+<orderdialog.repairmechanical>[name], check the machinery.</orderdialog.repairmechanical>
+<orderdialogself.repairmechanical>Checking machinery.</orderdialogself.repairmechanical>
+<orderdialogself.repairmechanical>Fixing.</orderdialogself.repairmechanical>
+
+</infotexts>

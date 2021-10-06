@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+
+    <!-- Reactor itself -->
+
+    <Item name="Ordiumnite Reactor" identifier="reactor_ordiumnite_bo" tags="reactor" type="Reactor" scale="0.5" description="A Black Order reactor that runs off of the less powerful yet long-lasting Ordiumnite." linkable="true" category="Machine" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+        <trigger />
+        <Sprite texture="Mods/Black Order Dialogue Mod/Items/Reactor/reactor_ordiumnite_bo.png" sourcerect="0,16,528,336" origin="0.5,0.45" depth="0.8" />
+        <UpgradePreviewSprite scale="3.0" texture="Content/UI/WeaponUI.png" sourcerect="0,960,64,64" origin="0.5,0.45" />
+        <BrokenSprite texture="Mods/Black Order Dialogue Mod/Items/Reactor/reactor_ordiumnite_bo.png" sourcerect="0,368,528,336" depth="0.8" origin="0.5,0.45" maxcondition="40" />
+        <BrokenSprite texture="Mods/Black Order Dialogue Mod/Items/Reactor/reactor_ordiumnite_bo.png" sourcerect="0,720,528,336" depth="0.8" origin="0.5,0.45" maxcondition="0" />
+        <aitarget sightrange="500" soundrange="7500" />
+        <Reactor canbeselected="true" firedelay="20" meltdowndelay="120" maxpoweroutput="7500" fuelconsumptionrate="0.05" vulnerabletoemp="true" msg="ItemMsgInteractSelect">
+          <StatusEffect type="InWater" target="This" condition="-0.5">
+            <Conditional condition="gt 10"/>
+          </StatusEffect>
+          <GuiFrame relativesize="0.5,0.45" minsize="700,350" maxsize="2688,1166" anchor="Center" relativeoffset="0.1,0" style="ItemUI" />
+          <GraphLine texture="Content/Items/Reactor/graphLine.png">
+            <Sprite name="ReactorGraphLine" texture="Content/Items/Reactor/graphLine.png" sourcerect="0,0,32,32" />
+          </GraphLine>
+          <FissionRateMeter>
+            <Sprite name="FissionRateMeter" texture="Content/UI/UIAtlasDevices.png" sourcerect="0,791,448,233" origin="0.5,1" />
+          </FissionRateMeter>
+          <TurbineOutputMeter>
+            <Sprite name="TurbineOutputMeter" texture="Content/UI/UIAtlasDevices.png" sourcerect="447,791,449,233" origin="0.5,1" />
+          </TurbineOutputMeter>
+          <MeterPointer>
+            <Sprite name="MeterPointer" texture="Content/UI/UIAtlasDevices.png" sourcerect="938,846,31,167 " origin="0.5,0.9" />
+          </MeterPointer>
+          <SectorSprite>
+            <Sprite name="SectorSprite" texture="Content/UI/UIAtlasDevices.png" sourcerect="769,326,238,455" origin="0.95,0.5" />
+          </SectorSprite>
+          <TempMeterFrame>
+            <Sprite name="TempMeterFrame" texture="Content/UI/UIAtlasDevices.png" sourcerect="92,517,59,265" origin="0,0" size="0.5,1" />
+          </TempMeterFrame>
+          <TempMeterBar>
+            <Sprite name="TempMeterBar" texture="Content/UI/UIAtlasDevices.png" sourcerect="270,414,106,47" origin="0.5,0" />
+          </TempMeterBar>
+          <TempRangeIndicator>
+            <Sprite name="TempRangeIndicator" texture="Content/UI/UIAtlasDevices.png" sourcerect="31,614,52,25" origin="0.5,0.5" size="0.6,0.6" />
+          </TempRangeIndicator>
+          <RequiredSkill identifier="electrical" level="55" />
+          <sound file="Content/Items/Reactor/Reactor.ogg" type="OnActive" range="2000.0" volumeproperty="FissionRate" volume="0.02" loop="true" />
+          <StatusEffect type="OnBroken" target="This" FissionRate="0.0" disabledeltatime="true">
+            <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="8000" selectionmode="All" />
+            <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="8000" />
+            <Explosion range="800" structuredamage="100" force="5.0" camerashake="200" flashrange="10000" flashduration="5.0" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="3.0">
+              <Affliction identifier="burn" strength="200" />
+              <Affliction identifier="explosiondamage" strength="50" />
+              <Affliction identifier="radiationsickness" strength="50" />
+              <Affliction identifier="stun" strength="5" />
+            </Explosion>
+          </StatusEffect>
+          <StatusEffect type="OnBroken" target="Contained" Condition="0.0" setvalue="true" />
+        </Reactor>
+        <LightComponent range="10.0" lightcolor="255,255,255,0" powerconsumption="0" IsOn="false" castshadows="false" allowingameediting="false">
+          <Upgrade gameversion="0.9.600.0" lightcolor="255,255,255,0" />
+          <IsActive targetitemcomponent="Reactor" temperature="gt 2" />
+          <sprite texture="Mods/Black Order Dialogue Mod/Items/Reactor/reactor_ordiumnite_bo.png" depth="0.025" sourcerect="544,16,528,336" origin="0.5,0.45" alpha="1.0" />
+        </LightComponent>
+        <LightComponent range="10.0" lightcolor="255,255,255,0" powerconsumption="0" IsOn="false" castshadows="false" allowingameediting="false" blinkfrequency="1">
+          <Upgrade gameversion="0.9.600.0" lightcolor="255,255,255,0" />
+          <IsActive targetitemcomponent="Reactor" temperaturecritical="eq true" />
+          <sprite texture="Mods/Black Order Dialogue Mod/Items/Reactor/reactor_ordiumnite_bo.png" depth="0.025" sourcerect="544,368,528,336" origin="0.5,0.45" alpha="1.0" />
+        </LightComponent>
+        <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+          <GuiFrame relativesize="0.3,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+          <RequiredSkill identifier="electrical" level="55" />
+          <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+            <Sound file="Content/Sounds/Damage/Electrocution1.ogg" range="1000" />
+            <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+            <Affliction identifier="stun" strength="4" />
+            <Affliction identifier="burn" strength="5" />
+          </StatusEffect>
+          <RequiredItem items="screwdriver" type="Equipped" />
+          <output name="power_out" displayname="connection.powerout" maxwires="1" />
+          <output name="temperature_out" displayname="connection.temperatureout" />
+          <input name="shutdown" displayname="connection.shutdown" />
+          <output name="meltdown_warning" displayname="connection.meltdownwarning">
+            <StatusEffect type="OnUse" target="This">
+              <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="40.0" />
+              <ParticleEmitter particle="DarkSmoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="20" scalemin="2.5" scalemax="3.5" anglemin="50" anglemax="130" velocitymin="10" velocitymax="50" mincondition="0.0" maxcondition="60.0" />         
+              <ParticleEmitter particle="DarkSmoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="40" scalemin="2.5" scalemax="3.5" distancemin="-15" distancemax="15" anglemin="50" anglemax="130" velocitymin="10" velocitymax="100" mincondition="0.0" maxcondition="20.0" />         		 
+              <ParticleEmitter particle="swirlysmoke" particlespersecond="3" scalemin="1" scalemax="2" anglemin="0" anglemax="360" velocitymin="0" velocitymax="10" />
+              <sound file="Content/Items/Reactor/ReactorOverheatAlarm.ogg" type="OnUse" range="10000.0" loop="true" volume="1.0" />
+            </StatusEffect>
+          </output>
+          <input name="set_fissionrate" displayname="connection.setfissionrate" />
+          <input name="set_turbineoutput" displayname="connection.setturbineoutput" />
+          <output name="power_value_out" displayname="connection.powervalueout" />
+          <output name="load_value_out" displayname="connection.loadvalueout" />
+          <output name="fuel_out" displayname="connection.availablefuelout" />
+        </ConnectionPanel>
+        <ItemContainer capacity="4" maxstacksize="1" canbeselected="true" hudpos="0.5,0.15" slotsperrow="1" uilabel="FuelRods">
+          <Containable items="ordiumnite_shitty_bo">
+            <StatusEffect type="OnContaining" target="This" AvailableFuel="80.0" disabledeltatime="true" />
+          </Containable>
+          <!-- Commented till I add them
+          <Containable items="ordiumnite_regular_bo">
+            <StatusEffect type="OnContaining" target="This" AvailableFuel="100.0" disabledeltatime="true" />
+          </Containable>
+          <Containable items="ordiumnite_expedition_bo">
+            <StatusEffect type="OnContaining" target="This" AvailableFuel="200.0" disabledeltatime="true" />
+          </Containable>
+        -->
+        </ItemContainer>
+        <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.125" mindeteriorationdelay="120" maxdeteriorationdelay="720" MinDeteriorationCondition="10" minsabotagecondition="10" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+          <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,216" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+          <RequiredSkill identifier="mechanical" level="55" />
+          <RequiredItem items="wrench" type="equipped" />
+          <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+          <ParticleEmitter particle="DarkSmoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="8" scalemin="1.8" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="0.0" maxcondition="50.0" />
+          <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
+          <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+            <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+            <Affliction identifier="lacerations" strength="5" />
+            <Affliction identifier="stun" strength="4" />
+          </StatusEffect>
+        </Repairable>
+      </Item>
+
+      <Item name="Military-Grade Ordiumnite Reactor" identifier="reactor_ordiumnite_military_bo" tags="reactor" type="Reactor" scale="0.5" description="A Black Order reactor that runs off of the less powerful yet long-lasting Ordiumnite. The military variant is specialized to strain the ordiumnite more to get more power, whilst not sacrificing the longetivity of the rods significantly." 
+      linkable="true" category="Machine" damagedbyexplosions="true" explosiondamagemultiplier="0.4">
+        <trigger />
+        <Sprite texture="Mods/Black Order Dialogue Mod/Items/Reactor/reactor_ordiumnite_military_bo.png" sourcerect="0,16,528,336" origin="0.5,0.45" depth="0.8" />
+        <UpgradePreviewSprite scale="3.0" texture="Content/UI/WeaponUI.png" sourcerect="0,960,64,64" origin="0.5,0.45" />
+        <BrokenSprite texture="Mods/Black Order Dialogue Mod/Items/Reactor/reactor_ordiumnite_military_bo.png" sourcerect="0,368,528,336" depth="0.8" origin="0.5,0.45" maxcondition="40" />
+        <BrokenSprite texture="Mods/Black Order Dialogue Mod/Items/Reactor/reactor_ordiumnite_military_bo.png" sourcerect="0,720,528,336" depth="0.8" origin="0.5,0.45" maxcondition="0" />
+        <aitarget sightrange="500" soundrange="7500" />
+        <Reactor canbeselected="true" firedelay="20" meltdowndelay="50" maxpoweroutput="8500" fuelconsumptionrate="0.06" vulnerabletoemp="true" msg="ItemMsgInteractSelect">
+          <StatusEffect type="InWater" target="This" condition="-0.5">
+            <Conditional condition="gt 10"/>
+          </StatusEffect>
+          <GuiFrame relativesize="0.5,0.45" minsize="700,350" maxsize="2688,1166" anchor="Center" relativeoffset="0.1,0" style="ItemUI" />
+          <GraphLine texture="Content/Items/Reactor/graphLine.png">
+            <Sprite name="ReactorGraphLine" texture="Content/Items/Reactor/graphLine.png" sourcerect="0,0,32,32" />
+          </GraphLine>
+          <FissionRateMeter>
+            <Sprite name="FissionRateMeter" texture="Content/UI/UIAtlasDevices.png" sourcerect="0,791,448,233" origin="0.5,1" />
+          </FissionRateMeter>
+          <TurbineOutputMeter>
+            <Sprite name="TurbineOutputMeter" texture="Content/UI/UIAtlasDevices.png" sourcerect="447,791,449,233" origin="0.5,1" />
+          </TurbineOutputMeter>
+          <MeterPointer>
+            <Sprite name="MeterPointer" texture="Content/UI/UIAtlasDevices.png" sourcerect="938,846,31,167 " origin="0.5,0.9" />
+          </MeterPointer>
+          <SectorSprite>
+            <Sprite name="SectorSprite" texture="Content/UI/UIAtlasDevices.png" sourcerect="769,326,238,455" origin="0.95,0.5" />
+          </SectorSprite>
+          <TempMeterFrame>
+            <Sprite name="TempMeterFrame" texture="Content/UI/UIAtlasDevices.png" sourcerect="92,517,59,265" origin="0,0" size="0.5,1" />
+          </TempMeterFrame>
+          <TempMeterBar>
+            <Sprite name="TempMeterBar" texture="Content/UI/UIAtlasDevices.png" sourcerect="270,414,106,47" origin="0.5,0" />
+          </TempMeterBar>
+          <TempRangeIndicator>
+            <Sprite name="TempRangeIndicator" texture="Content/UI/UIAtlasDevices.png" sourcerect="31,614,52,25" origin="0.5,0.5" size="0.6,0.6" />
+          </TempRangeIndicator>
+          <RequiredSkill identifier="electrical" level="55" />
+          <sound file="Content/Items/Reactor/Reactor.ogg" type="OnActive" range="2000.0" volumeproperty="FissionRate" volume="0.02" loop="true" />
+          <StatusEffect type="OnBroken" target="This" FissionRate="0.0" disabledeltatime="true">
+            <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="8000" selectionmode="All" />
+            <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="8000" />
+            <Explosion range="800" structuredamage="100" force="5.0" camerashake="200" flashrange="10000" flashduration="5.0" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="3.0">
+              <Affliction identifier="burn" strength="200" />
+              <Affliction identifier="explosiondamage" strength="50" />
+              <Affliction identifier="radiationsickness" strength="50" />
+              <Affliction identifier="stun" strength="5" />
+            </Explosion>
+          </StatusEffect>
+          <StatusEffect type="OnBroken" target="Contained" Condition="0.0" setvalue="true" />
+        </Reactor>
+        <LightComponent range="10.0" lightcolor="255,255,255,0" powerconsumption="0" IsOn="false" castshadows="false" allowingameediting="false">
+          <Upgrade gameversion="0.9.600.0" lightcolor="255,255,255,0" />
+          <IsActive targetitemcomponent="Reactor" temperature="gt 2" />
+          <sprite texture="Mods/Black Order Dialogue Mod/Items/Reactor/reactor_ordiumnite_military_bo.png" depth="0.025" sourcerect="544,16,528,336" origin="0.5,0.45" alpha="1.0" />
+        </LightComponent>
+        <LightComponent range="10.0" lightcolor="255,255,255,0" powerconsumption="0" IsOn="false" castshadows="false" allowingameediting="false" blinkfrequency="1">
+          <Upgrade gameversion="0.9.600.0" lightcolor="255,255,255,0" />
+          <IsActive targetitemcomponent="Reactor" temperaturecritical="eq true" />
+          <sprite texture="Mods/Black Order Dialogue Mod/Items/Reactor/reactor_ordiumnite_military_bo.png" depth="0.025" sourcerect="544,368,528,336" origin="0.5,0.45" alpha="1.0" />
+        </LightComponent>
+        <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+          <GuiFrame relativesize="0.3,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+          <RequiredSkill identifier="electrical" level="55" />
+          <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+            <Sound file="Content/Sounds/Damage/Electrocution1.ogg" range="1000" />
+            <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+            <Affliction identifier="stun" strength="4" />
+            <Affliction identifier="burn" strength="5" />
+          </StatusEffect>
+          <RequiredItem items="screwdriver" type="Equipped" />
+          <output name="power_out" displayname="connection.powerout" maxwires="1" />
+          <output name="temperature_out" displayname="connection.temperatureout" />
+          <input name="shutdown" displayname="connection.shutdown" />
+          <output name="meltdown_warning" displayname="connection.meltdownwarning">
+            <StatusEffect type="OnUse" target="This">
+              <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="40.0" />
+              <ParticleEmitter particle="DarkSmoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="20" scalemin="2.5" scalemax="3.5" anglemin="50" anglemax="130" velocitymin="10" velocitymax="50" mincondition="0.0" maxcondition="60.0" />         
+              <ParticleEmitter particle="DarkSmoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="40" scalemin="2.5" scalemax="3.5" distancemin="-15" distancemax="15" anglemin="50" anglemax="130" velocitymin="10" velocitymax="100" mincondition="0.0" maxcondition="20.0" />         		 
+              <ParticleEmitter particle="swirlysmoke" particlespersecond="3" scalemin="1" scalemax="2" anglemin="0" anglemax="360" velocitymin="0" velocitymax="10" />
+              <sound file="Content/Items/Reactor/ReactorOverheatAlarm.ogg" type="OnUse" range="10000.0" loop="true" volume="1.0" />
+            </StatusEffect>
+          </output>
+          <input name="set_fissionrate" displayname="connection.setfissionrate" />
+          <input name="set_turbineoutput" displayname="connection.setturbineoutput" />
+          <output name="power_value_out" displayname="connection.powervalueout" />
+          <output name="load_value_out" displayname="connection.loadvalueout" />
+          <output name="fuel_out" displayname="connection.availablefuelout" />
+        </ConnectionPanel>
+        <ItemContainer capacity="4" maxstacksize="1" canbeselected="true" hudpos="0.5,0.15" slotsperrow="1" uilabel="FuelRods">
+          <Containable items="ordiumnite_shitty_bo">
+            <StatusEffect type="OnContaining" target="This" AvailableFuel="90.0" disabledeltatime="true" />
+          </Containable>
+          <!-- Commented till I add them
+          <Containable items="ordiumnite_regular_bo">
+            <StatusEffect type="OnContaining" target="This" AvailableFuel="110.0" disabledeltatime="true" />
+          </Containable>
+          <Containable items="ordiumnite_expedition_bo">
+            <StatusEffect type="OnContaining" target="This" AvailableFuel="250.0" disabledeltatime="true" />
+          </Containable>
+        -->
+        </ItemContainer>
+        <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.125" mindeteriorationdelay="120" maxdeteriorationdelay="720" MinDeteriorationCondition="10" minsabotagecondition="10" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+          <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,216" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+          <RequiredSkill identifier="mechanical" level="55" />
+          <RequiredItem items="wrench" type="equipped" />
+          <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+          <ParticleEmitter particle="DarkSmoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="8" scalemin="1.8" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="0.0" maxcondition="50.0" />
+          <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
+          <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+            <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+            <Affliction identifier="lacerations" strength="5" />
+            <Affliction identifier="stun" strength="4" />
+          </StatusEffect>
+        </Repairable>
+      </Item>
+
+      <!-- Reactor Fuels -->
+
+    <Item name="Low-Quality Ordiumnite Rod" identifier="ordiumnite_fuelrod_shitty_bo" Tags="smallitem,reactorfuel" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.5" 
+    description="A low-quality Ordiumnite rod. Outputs less power than it should but it works for those in need in a pinch.">
+        
+        <!-- Spawn inside shit
+        <PreferredContainer primary="reactorcab" minamount="2" maxamount="5" spawnprobability="1" />
+        <PreferredContainer secondary="wreckreactorcab,abandonedstoragecab" minamount="1" maxamount="3" spawnprobability="1"/>
+        -->
+
+        <Price baseprice="235" >
+          <Price locationtype="outpost" multiplier="1" sold="false"/>
+          <Price locationtype="city" multiplier="1.3" minavailable="1" />
+          <Price locationtype="research" multiplier="1" minavailable="2" />
+          <Price locationtype="military" multiplier="1" sold="false" />
+          <Price locationtype="mine" multiplier="1" sold="false" />
+        </Price>
+
+        <!-- Deconstruct, disabled for reasons :)
+        <Deconstruct time="10">
+          <Item identifier="steel"/>
+          <Item identifier="lead" />
+          <Item identifier="uranium" copycondition="true"/>
+        </Deconstruct>
+        -->
+
+        <!-- Fabricator, disabled for reasons :)
+        <Fabricate suitablefabricators="fabricator" requiredtime="15">
+          <RequiredSkill identifier="mechanical" level="25" />
+          <RequiredItem identifier="uranium" />
+          <RequiredItem identifier="steel" />
+          <RequiredItem identifier="lead" />
+        </Fabricate>
+        <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="10">
+          <RequiredSkill identifier="mechanical" level="15" />
+          <RequiredItem identifier="uranium" />
+          <RequiredItem identifier="fuelrod" mincondition="0.0" usecondition="false"/>
+        </Fabricate>
+        -->
+
+        <InventoryIcon texture="Mods/Black Order Dialogue Mod/Items/Reactor/fuelrods_inv_bo.png" sourcerect="128,0,64,63" origin="0.5,0.5" />
+        <Sprite texture="Mods/Black Order Dialogue Mod/Items/Reactor/fuelrods_bo.png" sourcerect="40,0,20,69" depth="0.55" />
+        <Body radius="6" height="55" density="20" />
+        <Holdable handle1="0,0" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
+          <!--Status effect to cause radiation whenever handling fuel rods. Disabled for now because effect doesn't stop when no longer in contact with fuel rods.-->
+          <!--<StatusEffect type="Always" target="Character">
+            <Affliction identifier="radiationsickness" strength="0.25" />
+          </StatusEffect>-->
+
+        </Holdable>
+    </Item>
+
+    <Item name="Standard-Grade Ordiumnite Rod" identifier="ordiumnite_fuelrod_regular_bo" Tags="smallitem,reactorfuel" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.5" 
+    description="A standard-grade Ordiumnite rod. The standard fuel rod for Ordiumnite reactors.">
+        
+        <!-- Spawn inside shit
+        <PreferredContainer primary="reactorcab" minamount="2" maxamount="5" spawnprobability="1" />
+        <PreferredContainer secondary="wreckreactorcab,abandonedstoragecab" minamount="1" maxamount="3" spawnprobability="1"/>
+        -->
+
+        <Price baseprice="235" >
+          <Price locationtype="outpost" multiplier="1" sold="false"/>
+          <Price locationtype="city" multiplier="1.3" minavailable="1" />
+          <Price locationtype="research" multiplier="1" minavailable="2" />
+          <Price locationtype="military" multiplier="1" sold="false" />
+          <Price locationtype="mine" multiplier="1" sold="false" />
+        </Price>
+
+        <!-- Deconstruct, disabled for reasons :)
+        <Deconstruct time="10">
+          <Item identifier="steel"/>
+          <Item identifier="lead" />
+          <Item identifier="uranium" copycondition="true"/>
+        </Deconstruct>
+        -->
+
+        <!-- Fabricator, disabled for reasons :)
+        <Fabricate suitablefabricators="fabricator" requiredtime="15">
+          <RequiredSkill identifier="mechanical" level="25" />
+          <RequiredItem identifier="uranium" />
+          <RequiredItem identifier="steel" />
+          <RequiredItem identifier="lead" />
+        </Fabricate>
+        <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="10">
+          <RequiredSkill identifier="mechanical" level="15" />
+          <RequiredItem identifier="uranium" />
+          <RequiredItem identifier="fuelrod" mincondition="0.0" usecondition="false"/>
+        </Fabricate>
+        -->
+
+        <InventoryIcon texture="Mods/Black Order Dialogue Mod/Items/Reactor/fuelrods_inv_bo.png" sourcerect="0,0,64,63" origin="0.5,0.5" />
+        <Sprite texture="Mods/Black Order Dialogue Mod/Items/Reactor/fuelrods_bo.png" sourcerect="0,0,20,69" depth="0.55" />
+        <Body radius="6" height="55" density="20" />
+        <Holdable handle1="0,0" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
+          <!--Status effect to cause radiation whenever handling fuel rods. Disabled for now because effect doesn't stop when no longer in contact with fuel rods.-->
+          <!--<StatusEffect type="Always" target="Character">
+            <Affliction identifier="radiationsickness" strength="0.25" />
+          </StatusEffect>-->
+
+        </Holdable>
+    </Item>
+
+    <Item name="Expeditionary-Quality Ordiumnite Rod" identifier="ordiumnite_fuelrod_expedition_bo" Tags="smallitem,reactorfuel" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.5" 
+    description="A expeditionary-quality Ordiumnite rod. Outputs more power and meant to last longer. Theoretically.">
+        
+        <!-- Spawn inside shit
+        <PreferredContainer primary="reactorcab" minamount="2" maxamount="5" spawnprobability="1" />
+        <PreferredContainer secondary="wreckreactorcab,abandonedstoragecab" minamount="1" maxamount="3" spawnprobability="1"/>
+        -->
+
+        <Price baseprice="235" >
+          <Price locationtype="outpost" multiplier="1" sold="false"/>
+          <Price locationtype="city" multiplier="1.3" minavailable="1" />
+          <Price locationtype="research" multiplier="1" minavailable="2" />
+          <Price locationtype="military" multiplier="1" sold="false" />
+          <Price locationtype="mine" multiplier="1" sold="false" />
+        </Price>
+
+        <!-- Deconstruct, disabled for reasons :)
+        <Deconstruct time="10">
+          <Item identifier="steel"/>
+          <Item identifier="lead" />
+          <Item identifier="uranium" copycondition="true"/>
+        </Deconstruct>
+        -->
+
+        <!-- Fabricator, disabled for reasons :)
+        <Fabricate suitablefabricators="fabricator" requiredtime="15">
+          <RequiredSkill identifier="mechanical" level="25" />
+          <RequiredItem identifier="uranium" />
+          <RequiredItem identifier="steel" />
+          <RequiredItem identifier="lead" />
+        </Fabricate>
+        <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="10">
+          <RequiredSkill identifier="mechanical" level="15" />
+          <RequiredItem identifier="uranium" />
+          <RequiredItem identifier="fuelrod" mincondition="0.0" usecondition="false"/>
+        </Fabricate>
+        -->
+
+        <InventoryIcon texture="Mods/Black Order Dialogue Mod/Items/Reactor/fuelrods_inv_bo.png" sourcerect="64,0,64,63" origin="0.5,0.5" />
+        <Sprite texture="Mods/Black Order Dialogue Mod/Items/Reactor/fuelrods_bo.png" sourcerect="20,0,20,69" depth="0.55" />
+        <Body radius="6" height="55" density="20" />
+        <Holdable handle1="0,0" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
+          <!--Status effect to cause radiation whenever handling fuel rods. Disabled for now because effect doesn't stop when no longer in contact with fuel rods.-->
+          <!--<StatusEffect type="Always" target="Character">
+            <Affliction identifier="radiationsickness" strength="0.25" />
+          </StatusEffect>-->
+
+        </Holdable>
+    </Item>
+
+</Items>

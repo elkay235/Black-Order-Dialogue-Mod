@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Conversations identifier="botraits" Language="English">
+
+<PersonalityTrait name="Perfectionist" alloweddialogtags="boperfectionist,none" commonness="0,3" />
+<PersonalityTrait name="Husk Follower" alloweddialogtags="bocultist,none" commonness="0,2" />
+<PersonalityTrait name="Destined Commissar" alloweddialogtags="bocommissar,none" commonness="0,1" />
+<PersonalityTrait name="Gun Nut" alloweddialogtags="bogunnut,none" commonness="0,4" />
+<PersonalityTrait name="Techie" alloweddialogtags="botechie,none" commonness="0,3" />
+<PersonalityTrait name="Egotistic" alloweddialogtags="boegotistic,none" commonness="0,2" />
+<PersonalityTrait name="Conspiracicy Theorist" alloweddialogtags="boconspiracy,none" commonness="0,2" />
+
+</Conversations>

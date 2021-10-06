@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Conversations identifier="orderconversations" Language="English">
+
+<!-- Personality traits -->
+<PersonalityTrait name="Professional" alloweddialogtags="professional,none" commonness="1" />
+<PersonalityTrait name="Laid-back" alloweddialogtags="laid-back,none" commonness="1" />
+<PersonalityTrait name="Rude" alloweddialogtags="rude,none" commonness="1" />
+<PersonalityTrait name="Tough" alloweddialogtags="tough,none" commonness="1" />
+<PersonalityTrait name="Joker" alloweddialogtags="joker,none" commonness="0,5" />
+<PersonalityTrait name="Broken English" alloweddialogtags="brokenenglish" commonness="0,5" />
+<PersonalityTrait name="Fearful" alloweddialogtags="fearful,none" commonness="0,5" />
+<PersonalityTrait name="Crazy" alloweddialogtags="crazy,none" commonness="0,5" />
+
+<!-- Initial -->
+
+<Conversation line="Setting course to... I don't remember. I'll look at the waypoints" speaker="0" flags="Initial" allowedjobs="captain">
+	<Conversation line="" speaker="0"/>
+	<Conversation line="How do you not remember our destination?" speaker="1">
+		<Conversation line="I don't even remember myself." speaker="2"/>
+		<Conversation line="Maybe captain is tired!" speaker="2" speakertags="brokenenglish"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="Siddown and enjoy the ride. We're off." speaker="0" flags="Initial" allowedjobs="captain">
+	<Conversation line="Hopefully its not that long." speaker="1"/>
+	<Conversation line="Yes, captain." speaker="1"/>
+</Conversation>
+
+<Conversation line="Captain speaking. We are off to destination!" speaker="0" flags="Initial" allowedjobs="captain" speakertags="brokenenglish">
+	<Conversation line="Yes, sir." speaker="1"/>
+	<Conversation line="Remember Our Cause." speaker="1"/>
+</Conversation>
+
+<Conversation line="Any chance we have a heater on-board?" speaker="0" maxintensity="0.4">
+		<Conversation line="Probably not. Just sit by the reactor. Definitely a good idea." speaker="1" speakertags="joker"/>
+		<Conversation line="Dream on." speaker="1" speakertags="joker"/>
+</Conversation>
+
+<!-- Banter -->
+
+<Conversation line="Ever wonder why some subs use fusion reactors?" speaker="0" allowedjobs="engineer" maxintensity="0.4">
+	<Conversation line="Either budget cuts or just out of necessity, I'd guess." speaker="1">
+		<Conversation line="I heard they're less dangerous, too." speaker="2">
+			<Conversation line="Anything's dangerous, technically. It's just if you're a moron or not." speaker="0"/>
+			<Conversation line="Me too. I prefer to not put it to the test, though." speaker="0"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="I won't treat papercuts any longer. Don't come to me for one. It ain't gonna happen." speaker="0" allowedjobs="medicaldoctor" speakertags="rude" maxintensity="0.3"/>
+
+<Conversation line="You know, one time I found an antique revolver on some Husk's corpse." speaker="0" speakertags="bogunnut" maxintensity="0.2">
+	<Conversation line="Quite old. Probably inherited from generations." speaker="0" flags="Psychosis">
+		<Conversation line="I need to restore it." speaker="0" flags="Psychosis"/>
+	</Conversation>
+	<Conversation line="Plan on using it?" speaker="1">
+		<Conversation line="Probably not. I'll keep it on display for when I get my own office." speaker="0">
+			<Conversation line="I don't want it to wear down any more." speaker="0"/>
+			<Conversation line="Maybe when I move on from my captain position, you'll take my role." speaker="2" allowedjobs="captain"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="Y'all got a significant other?" speaker="0" maxintensity="0.3">
+	<Conversation line="Yup. Met them at an outpost I grew up on. We talk on occasion." speaker="1">
+		<Conversation line="What happens during those extended periods of no communication?" speaker="2">
+			<Conversation line="Well, we came to the understanding it'll happen. They've been loyal." speaker="1"/>
+			<Conversation line="That's what I'd fear if I was with someone." speaker="2"/>
+			<Conversation line="...Fuck." speaker="1"/>
+			<Conversation line="...Good question." speaker="1"/>
+		</Conversation>
+	</Conversation>
+	<Conversation line="Forever alone. Hard to have one when you're always moving about." speaker="1" speakertags="bocommissar"/>
+	<Conversation line="Husks don't need a rela- ah. Maybe I'll shut up." speaker="1" speakertags="bocultist"/>
+	<Conversation line="Three words: one night stand." speaker="1" speakertags="joker"/>
+</Conversation>
+
+<Conversation line="Hear me out: a Black Order Husk army." speaker="0" maxintensity="0.3">
+	<Conversation line="Find converted husks, or just infect prisoners." speaker="0">
+		<Conversation line="Send them out to do our dirty work. Less actual casualties, easier time." speaker="0">
+			<Conversation line="...That's actually a half decent idea, and I hate it." speaker="1"/>
+			<Conversation line="Okay, but who gets the paycheck then?" speaker="1"/>
+			<Conversation line="Sure, but how would we control them? Not like they follow our ideology." speaker="1"/>
+		</Conversation>
+	</Conversation>
+	<Conversation line="Even by my standards, let's just not." speaker="1" speakertags="joker"/>
+</Conversation>
+
+<Conversation line="Y'all remember Tesla? The automotive company?" speaker="0" maxintensity="0.4" allowedjobs="captain">
+	<Conversation line="The more I think about it, our autopilot system's sort of like theirs." speaker="0" allowedjobs="captain">
+		<Conversation line="In the sense that it can't turn corners, hits every pedestrian, or screams at you when your hands are off the wheel?" speaker="1" allowedjobs="engineer" />
+		<Conversation line="Ours does more than theirs: underwater navigation. Whoop dee doo." speaker="1" />
+	</Conversation>
+	<Conversation line="Yeah. I wonder if they're still around." speaker="1" >
+		<Conversation line="If they are, it's definitely not one of their priorities to reach us here, that's for sure." speaker="2" />
+	</Conversation>
+</Conversation>
+
+<Conversation line="Have y'all heard about Commissar A-5?" speaker="0" maxintensity="0.4" allowedjobs="mechanic" >
+	<Conversation line="Apparently they're part of the reason why the lot of us Order personnel are stuck on this rock." speaker="0">
+		<Conversation line="Source?" speaker="1">
+			<Conversation line="I saw it in some Europan Coalition article. I don't remember the specifics but it's said that our return - both Order and Europans alike - is very much possible. They just aren't doing it." speaker="0">
+				<Conversation line="I smell bullshit. If they had the means, they'd pull us out. Might want to cut the newspaper from your knowledge diet." speaker="0" />
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="I overheard that some Order scientists are testing out a new type of fission fuel." speaker="0" maxintensity="0.4" allowedjobs="engineer" >
+	<Conversation line="Apparently it's supposed to be for low-power submarines that want to stay out in the water for longer periods on a single rod." speaker="0" >
+		<Conversation line="What is it made of?" speaker="1" >
+			<Conversation line="Not sure. Said it was some type of compound. Not Fulgurium, though. That's what confuses me." speaker="0" >
+		</Conversation>
+		<Conversation line="Whatever it is, I'm bringing you to my next shopping run to find it." speaker="2" allowedjobs="captain" />
+	</Conversation>
+</Conversation>
+</Conversation>
+
+<!-- Cultist Banter -->
+
+<Conversation line="The more I think of it, the more I realize that perhaps the Church of Husk isn't that bad of an idea." speaker="0" speakertags="bocultist" maxintensity="0.4">
+	<Conversation line="Stop talking." speaker="1">
+		<Conversation line="And if I don't? The Order promotes free speech." speaker="0">
+			<Conversation line="And we don't tolerate idiocracy." speaker="1">
+				<Conversation line="It isn't idiocracy. It's fact. Look at the-" speaker="0">
+					<Conversation line="Do I need to eject both of you? Shut the fuck up." speaker="2" allowedjobs="captain"/>
+					<Conversation line="Can we have some silence for once?" speaker="3"/>
+				</Conversation>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="I wish you all would realize how grand the Husks are." speaker="0" speakertags="bocultist" >
+	<Conversation line="Shut the fuck up." speaker="1" />
+	<Conversation line="I wish you all would realize this fucker should be cycled in an airlock." speaker="2" >
+		<Conversation line="I would if the Coalition would let me." speaker="3" allowedjobs="captain" />
+	</Conversation>
+	<Conversation line="They adapt to the seas better than we ever could, and are the future of human society." speaker="0" >
+		<Conversation line="I'll believe you when we encounter a husk that doesn't try to brutally violate us." speaker="2" />
+	</Conversation>
+</Conversation>
+
+</Conversations>
+
+<!-- 
+</Overwrite> 
+-->
