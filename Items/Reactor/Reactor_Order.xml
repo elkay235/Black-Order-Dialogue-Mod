@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
 
-    <!-- Reactor itself -->
+    <!-- Reactor itself, bc yes -->
 
     <Item name="Ordiumnite Reactor" identifier="reactor_ordiumnite_bo" tags="reactor" type="Reactor" scale="0.5" description="A Black Order reactor that runs off of the less powerful yet long-lasting Ordiumnite." linkable="true" category="Machine" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
         <trigger />
