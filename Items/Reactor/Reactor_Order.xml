@@ -234,8 +234,8 @@
 
       <!-- Reactor Fuels -->
 
-    <Item name="Low-Quality Ordiumnite Rod" identifier="ordiumnite_fuelrod_shitty_bo" Tags="smallitem,reactorfuel" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.5" 
-    description="A low-quality Ordiumnite rod. Outputs less power than it should but it works for those in need in a pinch.">
+    <Item name="Low-Grade Ordiumnite Rod" identifier="ordiumnite_fuelrod_shitty_bo" Tags="smallitem,reactorfuel" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.5" 
+    description="A low-grade Ordiumnite rod. Outputs less power than it should but it works for those in need in a pinch.">
         
         <!-- Spawn inside shit
         <PreferredContainer primary="reactorcab" minamount="2" maxamount="5" spawnprobability="1" />
@@ -334,8 +334,8 @@
         </Holdable>
     </Item>
 
-    <Item name="Expeditionary-Quality Ordiumnite Rod" identifier="ordiumnite_fuelrod_expedition_bo" Tags="smallitem,reactorfuel" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.5" 
-    description="A expeditionary-quality Ordiumnite rod. Outputs more power and meant to last longer. Theoretically.">
+    <Item name="Expeditionary-Grade Ordiumnite Rod" identifier="ordiumnite_fuelrod_expedition_bo" Tags="smallitem,reactorfuel" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.5" 
+    description="A expeditionary-grade Ordiumnite rod. Outputs more power and meant to last longer. Theoretically.">
         
         <!-- Spawn inside shit
         <PreferredContainer primary="reactorcab" minamount="2" maxamount="5" spawnprobability="1" />
