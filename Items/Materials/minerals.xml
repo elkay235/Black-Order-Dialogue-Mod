@@ -15,9 +15,6 @@
           <Price locationtype="military" multiplier="1.35" sold="true" />
           <Price locationtype="mine" multiplier="1.2" sold="true" />
         </Price>
-        <Deconstruct time="5">
-          <Item identifier="ordiumnite_bo" />
-        </Deconstruct>
         <!-- TODO: sprite and inventory icon -->
         <LightComponent lightcolor="83,160,100,225" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="true">
           <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
@@ -30,7 +27,7 @@
         <DecorativeSprite texture="Mods/Black Order Dialogue Mod/Items/Materials/mineralenvironment_bo.png" depth="0.52" sourcerect="85,0,86,147" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
         <DecorativeSprite texture="Mods/Black Order Dialogue Mod/Items/Materials/mineralenvironment_bo.png" depth="0.491" sourcerect="170,0,86,147" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
         <DecorativeSprite texture="Mods/Black Order Dialogue Mod/Items/Materials/mineralenvironment_bo.png" depth="0.53" sourcerect="85,0,86,147" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
-        <DecorativeSprite texture="Mods/Black Order Dialogue Mod/Items/Materials/minerals_bo.png" depth="0.4" sourcerect="0,0,128,128" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" />
+        <DecorativeSprite texture="Mods/Black Order Dialogue Mod/Items/Materials/minerals_bo.png" depth="0.4" sourcerect="1000,1000,1000,1000" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" />
         <Body radius="40" width="20" density="50" />
         <LevelResource deattachduration="4" randomoffsetfromwall="80">
           <Commonness commonness="0.25" />
