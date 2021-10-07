@@ -74,7 +74,7 @@
 <dialogcannotreachtarget>Can't find [name]. You on radio by chance?</dialogcannotreachtarget>
 <dialogcannotreachplace>Location inaccessible.</dialogcannotreachplace>
 <dialogcannotreachfire>Yeaaaaah... no. I don't want to be burned alive.</dialogcannotreachfire>
-<dialogcannotreachfire>Fire in [name] is up for grabs. I ain't doing it.</dialogcannotreachfire>
+<dialogcannotreachfire>Fire in [name] is up for grabs. I ain't dealing with it.</dialogcannotreachfire>
 <dialogcannotreachleak>Leak at [name] is inaccessible.</dialogcannotreachleak>
 <dialogcannotreachpatient>[name] is at large from a doctor.</dialogcannotreachpatient>
 <dialogcannotreachpatient>[name] threw an apple at me.</dialogcannotreachpatient>
@@ -121,7 +121,7 @@
 <orderdialogself.operateweapons>Operating weapons.</orderdialogself.operateweapons>
 <orderdialogself.operateweapons>Manning the guns.</orderdialogself.operateweapons>
 <orderdialog.operateweapons.fireatwill>Fire at will, [name].</orderdialog.operateweapons.fireatwill>
-<orderdialogself.operateweapons.fireatwill>Affirmative.</orderdialogself.operateweapons.fireatwill>
+<orderdialogself.operateweapons.fireatwill>Affirmative. Firing.</orderdialogself.operateweapons.fireatwill>
 <orderdialogself.operateweapons.fireatwill>Showing zero mercy.</orderdialogself.operateweapons.fireatwill>
 <orderdialogself.operateweapons.fireatwill>Locked and loaded.</orderdialogself.operateweapons.fireatwill>
 <orderdialog.operateweapons.holdfire>Hold fire, [name].</orderdialog.operateweapons.holdfire>
