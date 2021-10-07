@@ -117,6 +117,17 @@
 </Conversation>
 </Conversation>
 
+<!-- Conspiracy Theorist Banter -->
+
+<Conversation line="I have a theory." speaker="0" maxintensity="0.5" speakertags="boconspiracy" >
+	<Conversation line="Pirates are cured husks." speaker="0">
+		<Conversation line="I have a theory: the Church of Husk clouded your mind with bullshit." speaker="1" >
+		<Conversation line="I don't even want to hear the rest of your shit. Shut your trap." speaker="2" allowedjobs="captain" >
+	</Conversation>
+	</Conversation>
+	</Conversation>
+</Conversation>
+
 <!-- Cultist Banter -->
 
 <Conversation line="The more I think of it, the more I realize that perhaps the Church of Husk isn't that bad of an idea." speaker="0" speakertags="bocultist" maxintensity="0.4">
