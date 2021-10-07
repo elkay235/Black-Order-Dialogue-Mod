@@ -223,7 +223,7 @@
             <StatusEffect type="OnContaining" target="This" AvailableFuel="250.0" disabledeltatime="true" />
           </Containable>
         -->
-        
+
         </ItemContainer>
         <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.125" mindeteriorationdelay="120" maxdeteriorationdelay="720" MinDeteriorationCondition="10" minsabotagecondition="10" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
           <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,216" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
@@ -300,12 +300,12 @@
         <PreferredContainer secondary="wreckreactorcab,abandonedstoragecab" minamount="1" maxamount="3" spawnprobability="1"/>
         -->
 
-        <Price baseprice="235" >
+        <Price baseprice="310" >
           <Price locationtype="outpost" multiplier="1" sold="false"/>
-          <Price locationtype="city" multiplier="1.3" minavailable="1" />
-          <Price locationtype="research" multiplier="1" minavailable="2" />
+          <Price locationtype="city" multiplier="1.3" sold="false" />
+          <Price locationtype="research" multiplier="1" minavailable="1" />
           <Price locationtype="military" multiplier="1" sold="false" />
-          <Price locationtype="mine" multiplier="1" sold="false" />
+          <Price locationtype="mine" multiplier="1.2" minavailable="2" />
         </Price>
 
         <!-- Deconstruct, disabled for reasons :)
@@ -350,11 +350,11 @@
         <PreferredContainer secondary="wreckreactorcab,abandonedstoragecab" minamount="1" maxamount="3" spawnprobability="1"/>
         -->
 
-        <Price baseprice="235" >
+        <Price baseprice="480" >
           <Price locationtype="outpost" multiplier="1" sold="false"/>
-          <Price locationtype="city" multiplier="1.3" minavailable="1" />
-          <Price locationtype="research" multiplier="1" minavailable="2" />
-          <Price locationtype="military" multiplier="1" sold="false" />
+          <Price locationtype="city" multiplier="1.3" sold="false" />
+          <Price locationtype="research" multiplier="1" minavailable="1" />
+          <Price locationtype="military" multiplier="1" minavailable="2" />
           <Price locationtype="mine" multiplier="1" sold="false" />
         </Price>
 
