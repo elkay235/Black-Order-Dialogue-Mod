@@ -142,6 +142,16 @@
 	</Conversation>
 </Conversation>
 
+<Conversation line="Praise the Church of Husk!" speaker="0" speakertags="bocultist" >
+	<Conversation line="Why would I want to praise a throat-killing creature?" speaker="1" />
+	<Conversation line="I think I'll pass on praising a throatfucking entity." speaker="1" >
+		<Conversation line="I second that." speaker="3" allowedjobs="captain" />
+	</Conversation>
+	<Conversation line="...Who let him on this ship?." speaker="1" >
+		<Conversation line="My mistake." speaker="2" />
+	</Conversation>
+</Conversation>
+
 </Conversations>
 
 <!-- 
