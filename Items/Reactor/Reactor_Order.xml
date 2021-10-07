@@ -95,6 +95,7 @@
           <Containable items="ordiumnite_shitty_bo">
             <StatusEffect type="OnContaining" target="This" AvailableFuel="80.0" disabledeltatime="true" />
           </Containable>
+
           <!-- Commented till I add them
           <Containable items="ordiumnite_regular_bo">
             <StatusEffect type="OnContaining" target="This" AvailableFuel="100.0" disabledeltatime="true" />
@@ -103,6 +104,7 @@
             <StatusEffect type="OnContaining" target="This" AvailableFuel="200.0" disabledeltatime="true" />
           </Containable>
         -->
+
         </ItemContainer>
         <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.125" mindeteriorationdelay="120" maxdeteriorationdelay="720" MinDeteriorationCondition="10" minsabotagecondition="10" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
           <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,216" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
@@ -212,6 +214,7 @@
           <Containable items="ordiumnite_shitty_bo">
             <StatusEffect type="OnContaining" target="This" AvailableFuel="90.0" disabledeltatime="true" />
           </Containable>
+
           <!-- Commented till I add them
           <Containable items="ordiumnite_regular_bo">
             <StatusEffect type="OnContaining" target="This" AvailableFuel="110.0" disabledeltatime="true" />
@@ -220,6 +223,7 @@
             <StatusEffect type="OnContaining" target="This" AvailableFuel="250.0" disabledeltatime="true" />
           </Containable>
         -->
+        
         </ItemContainer>
         <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.125" mindeteriorationdelay="120" maxdeteriorationdelay="720" MinDeteriorationCondition="10" minsabotagecondition="10" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
           <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,216" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
