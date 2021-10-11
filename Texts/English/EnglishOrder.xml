@@ -13,6 +13,8 @@
 <dialogcantfindcontroller>I cannot use the [item].</dialogcantfindcontroller>
 <dialogloadturret>Reloading the [itemname].</dialogloadturret>
 <dialogfireturret>Firing.</dialogfireturret>
+<dialogfireturret>A really big fucking bullet coming right up.</dialogfireturret>
+<dialogfireturret>Opening fire.</dialogfireturret>
 <dialogfireturret>Time to distribute ammo like its Communism.</dialogfireturret>
 <dialogturrettargetdead>Target eliminated.</dialogturrettargetdead>
 <dialogturrettargetdead>Threat handled.</dialogturrettargetdead>
@@ -51,7 +53,7 @@
 <dialogfoundunconscioustarget>[targetname] is unconscious.</dialogfoundunconscioustarget>
 <dialogfoundunconscioustarget>[targetname] found unconscious in [roomname].</dialogfoundunconscioustarget>
 <dialoglistrequiredtreatments>Yo necesito [treatmentlist] pronto.</dialoglistrequiredtreatments>
-<dialoglistrequiredtreatments>I need to give medical ai to [targetname].</dialoglistrequiredtreatments>
+<dialoglistrequiredtreatments>I need to give medical aid to [targetname].</dialoglistrequiredtreatments>
 <dialogtargethealed>[targetname] is now doped on Order-Certified drugs.</dialogtargethealed>
 <dialogtargethealed>Frankenstein nicknamed "[targetname]" has arisen.</dialogtargethealed>
 <dialogcannotrepair>[itemname] cannot be repaired.</dialogcannotrepair>
@@ -71,7 +73,7 @@
 <dialogfoundwoundedtarget>[targetname] failed penis inspection day.</dialogfoundwoundedtarget>
 <dialognorescuetargets>I'm not the creator of Jilly Juice. Don't treat me as such.</dialognorescuetargets>
 <dialognorescuetargets>I don't see anything that demands a doctor.</dialognorescuetargets>
-<dialogcannotreachtarget>Can't find [name]. You on radio by chance?</dialogcannotreachtarget>
+<dialogcannotreachtarget>Can't find [name]. Odd.</dialogcannotreachtarget>
 <dialogcannotreachplace>Location inaccessible.</dialogcannotreachplace>
 <dialogcannotreachfire>Yeaaaaah... no. I don't want to be burned alive.</dialogcannotreachfire>
 <dialogcannotreachfire>Fire in [name] is up for grabs. I ain't dealing with it.</dialogcannotreachfire>

@@ -3,6 +3,7 @@
 <Conversations identifier="orderconversations" Language="English">
 
 <!-- Personality traits -->
+<!-- Vanilla 
 <PersonalityTrait name="Professional" alloweddialogtags="professional,none" commonness="1" />
 <PersonalityTrait name="Laid-back" alloweddialogtags="laid-back,none" commonness="1" />
 <PersonalityTrait name="Rude" alloweddialogtags="rude,none" commonness="1" />
@@ -11,10 +12,19 @@
 <PersonalityTrait name="Broken English" alloweddialogtags="brokenenglish" commonness="0,5" />
 <PersonalityTrait name="Fearful" alloweddialogtags="fearful,none" commonness="0,5" />
 <PersonalityTrait name="Crazy" alloweddialogtags="crazy,none" commonness="0,5" />
+-->
+
+<PersonalityTrait name="Perfectionist" alloweddialogtags="boperfectionist,none" commonness="0,4" />
+<PersonalityTrait name="Husk Follower" alloweddialogtags="bocultist,none" commonness="0,3" />
+<PersonalityTrait name="Destined Commissar" alloweddialogtags="bocommissar,none" commonness="0,2" />
+<PersonalityTrait name="Gun Nut" alloweddialogtags="bogunnut,none" commonness="0,6" />
+<PersonalityTrait name="Techie" alloweddialogtags="botechie,none" commonness="0,5" />
+<PersonalityTrait name="Egotistic" alloweddialogtags="boegotistic,none" commonness="0,3" />
+<PersonalityTrait name="Conspiracicy Theorist" alloweddialogtags="boconspiracy,none" commonness="0,3" />
 
 <!-- Initial -->
 
-<Conversation line="Setting course to... I don't remember. I'll look at the waypoints" speaker="0" flags="Initial" allowedjobs="captain">
+<Conversation line="Setting course to... I don't remember. I'll look at the waypoints." speaker="0" flags="Initial" allowedjobs="captain">
 	<Conversation line="" speaker="0"/>
 	<Conversation line="How do you not remember our destination?" speaker="1">
 		<Conversation line="I don't even remember myself." speaker="2"/>
@@ -57,7 +67,7 @@
 	<Conversation line="Plan on using it?" speaker="1">
 		<Conversation line="Probably not. I'll keep it on display for when I get my own office." speaker="0">
 			<Conversation line="I don't want it to wear down any more." speaker="0"/>
-			<Conversation line="Maybe when I move on from my captain position, you'll take my role." speaker="2" allowedjobs="captain"/>
+			<Conversation line="Maybe when I move on from my captain position, you'll take my role and the office." speaker="2" allowedjobs="captain"/>
 		</Conversation>
 	</Conversation>
 </Conversation>
@@ -71,7 +81,7 @@
 			<Conversation line="...Good question." speaker="1"/>
 		</Conversation>
 	</Conversation>
-	<Conversation line="Forever alone. Hard to have one when you're always moving about." speaker="1" speakertags="bocommissar"/>
+	<Conversation line="Forever alone. Hard to have one when you're always moving about." speaker="1" speakertags="professional"/>
 	<Conversation line="Husks don't need a rela- ah. Maybe I'll shut up." speaker="1" speakertags="bocultist"/>
 	<Conversation line="Three words: one night stand." speaker="1" speakertags="joker"/>
 </Conversation>
@@ -88,7 +98,7 @@
 </Conversation>
 
 <Conversation line="Y'all remember Tesla? The automotive company?" speaker="0" maxintensity="0.4" allowedjobs="captain">
-	<Conversation line="The more I think about it, our autopilot system's sort of like theirs." speaker="0" allowedjobs="captain">
+	<Conversation line="The more I think about it, our autopilot system's sort of like theirs." speaker="0" >
 		<Conversation line="In the sense that it can't turn corners, hits every pedestrian, or screams at you when your hands are off the wheel?" speaker="1" allowedjobs="engineer" />
 		<Conversation line="Ours does more than theirs: underwater navigation. Whoop dee doo." speaker="1" />
 	</Conversation>
@@ -101,7 +111,7 @@
 	<Conversation line="Apparently they're part of the reason why the lot of us Order personnel are stuck on this rock." speaker="0">
 		<Conversation line="Source?" speaker="1">
 			<Conversation line="I saw it in some Europan Coalition article. I don't remember the specifics but it's said that our return - both Order and Europans alike - is very much possible. They just aren't doing it." speaker="0">
-				<Conversation line="I smell bullshit. If they had the means, they'd pull us out. Might want to cut the newspaper from your knowledge diet." speaker="0" />
+				<Conversation line="I smell bullshit. If they had the means, they'd pull us out. Might want to cut the newspaper from your knowledge diet." speaker="1" />
 			</Conversation>
 		</Conversation>
 	</Conversation>
