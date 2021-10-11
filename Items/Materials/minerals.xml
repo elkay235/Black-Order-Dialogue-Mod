@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
 
-    <Item name="Ordiumnite" identifier="ordiumniteore_bo" category="Material" Tags="smallitem,ore" maxstacksize="8" canbepicked="true" description="A shard of Ordiumnite, used to craft fuel cells, amongst other things." cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Item name="Ordiumnite" identifier="ordiumnite_bo" category="Material" Tags="smallitem,ore" maxstacksize="8" canbepicked="true" description="A shard of Ordiumnite, used to craft fuel cells, amongst other things." cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
        
         <!--
         <PreferredContainer secondary="locker" />
