@@ -136,6 +136,13 @@
 	</Conversation>
 </Conversation>
 
+<Conversation line="Europa is a living mass." speaker="0" maxintensity="0.5" speakertags="boconspiracy" >
+	<Conversation line="Think about it: natural heating, organisms to clean it, etc. We are just a virus." speaker="0">
+		<Conversation line="So is the Earth a living being? Or are we just a welcomed organism on it?" speaker="1" />
+		<Conversation line="You speak out of your ass more than I thought." speaker="2" allowedjobs="captain" />
+	</Conversation>
+</Conversation>
+
 <!-- Cultist Banter -->
 
 <Conversation line="The more I think of it, the more I realize that perhaps the Church of Husk isn't that bad of an idea." speaker="0" speakertags="bocultist" maxintensity="0.4">
@@ -167,7 +174,24 @@
 		<Conversation line="I second that." speaker="3" allowedjobs="captain" />
 	</Conversation>
 	<Conversation line="...Who let him on this ship?." speaker="1" >
-		<Conversation line="My mistake." speaker="2" />
+		<Conversation line="Can we eject em?" speaker="2" />
+	</Conversation>
+</Conversation>
+
+<Conversation line="I saw one of my bretheren at the last station! He wanted husk eggs, can we go get some?" speaker="0" speakertags="bocultist" >
+	<Conversation line="...We should have left you at the station." speaker="1" />
+	<Conversation line="I'll support this notion if it involves you swimming your way back to that station and not coming back here." speaker="1" >
+		<Conversation line="We can make that reality." speaker="3" allowedjobs="captain" />
+	</Conversation>
+	<Conversation line="Get a diving suit and do it yourself." speaker="1" >
+		<Conversation line="Don't encourage em." speaker="2" />
+	</Conversation>
+</Conversation>
+
+<Conversation line="I..." speaker="0" speakertags="bocultist" >
+	<Conversation line="I'm going to just stop you the fuck right there. Don't even utter a word, cultist." speaker="1" />
+	<Conversation line="...Almost forgot my calyx eggs." speaker="0" >
+		<Conversation line="And why did you bring those on board?" speaker="1" />
 	</Conversation>
 </Conversation>
 
