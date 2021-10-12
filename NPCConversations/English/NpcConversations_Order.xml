@@ -195,6 +195,23 @@
 	</Conversation>
 </Conversation>
 
+<!-- Situation fucked lines -->
+
+<Conversation line="Well, this shit's fucked!" speaker="0" maxintensity="0.7" >
+	<Conversation line="Well, aren't you a fucking optimist!" speaker="1" />
+	<Conversation line="Noooo, really!?" speaker="2">
+		<Conversation line="Almost like that shit was obvious from the get go!" speaker="2" />
+	</Conversation>
+</Conversation>
+
+<Conversation line="This is fine. Completely fine." speaker="0" maxintensity="0.9" />
+
+<Conversation line="Maybe I shouldn't have bought that rabbit's foot." speaker="0" maxintensity="0.8"> 
+	<Conversation line="You WHAT!?" speaker="1" speakertags="Professional"/>
+	<Conversation line="Well, that'll fucking do it!" speaker="1" />
+	<Conversation line="That probably has nothing to do with this, but damn you anyway!" speaker="1"/>
+</Conversation>
+
 </Conversations>
 
 <!-- 
