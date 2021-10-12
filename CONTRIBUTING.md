@@ -1,6 +1,8 @@
 # Contributing to the mod
 I thank you for wanting to help us develop this mod. The following is a list of ways you can help contribute and leave your own mark on the mod to help it grow and become better.
 
+**NOTE THAT THESE GUIDELINES CAN CHANGE AT ANY TIME, AND THE OWNER AND CONTRIBUTORS HAVE FREE WILL TO MAKE THEIR OWN VERDICTS IN OR OUTSIDE THESE GUIDELINES.**
+
 ## Reporting Bugs
 If you have a bug please make an Issue report and follow the template provided. Reporting bugs helps us become more aware of issues in our code - or perhaps issues on the game's end itself. 
 
