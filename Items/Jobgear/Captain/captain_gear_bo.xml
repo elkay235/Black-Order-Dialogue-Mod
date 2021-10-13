@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!-- HATS START -->
-  <Item name="BO Veteran's Cap" identifier="captainscap1" aliases="captainscap" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4">
+  <Item name="BO Veteran's Cap" identifier="captainscap1_bo" aliases="captainscap" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4">
     <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
     <Price baseprice="75">
       <Price locationtype="outpost" multiplier="1" minavailable="1"/>
@@ -19,7 +19,7 @@
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
     </Wearable>
   </Item>
-  <Item name="BO Renegade's Cap" identifier="captainscap2" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4">
+  <Item name="BO Renegade's Cap" identifier="captainscap2_bo" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4">
     <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
     <Price baseprice="75">
       <Price locationtype="outpost" multiplier="1" minavailable="1"/>
@@ -37,7 +37,7 @@
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
     </Wearable>
   </Item>
-  <Item name="BO Admiral's Cap" identifier="captainscap3" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4">
+  <Item name="BO Admiral's Cap" identifier="captainscap3_bo" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4">
     <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
     <Price baseprice="75">
       <Price locationtype="outpost" multiplier="1" minavailable="1"/>
