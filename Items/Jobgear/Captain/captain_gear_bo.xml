@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!-- HATS START -->
-  <!--
-  <Item name="" identifier="captainscap1" aliases="captainscap" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4">
+  <Item name="BO Veteran's Cap" identifier="captainscap1" aliases="captainscap" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4">
     <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
     <Price baseprice="75">
       <Price locationtype="outpost" multiplier="1" minavailable="1"/>
@@ -12,15 +11,15 @@
       <Price locationtype="mine" multiplier="1" minavailable="1"/>
     </Price>
     <Deconstruct time="10"/>
-    <Sprite name="Captain's Cap 1" texture="Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="16,132,76,50" origin="0.5,0.5" />
+    <Sprite name="Captain's Cap 1" texture="Mods/Black Order Dialogue Mod/Items/headgears_bo.png" depth="0.6" sourcerect="16,132,76,50" origin="0.5,0.5" />
     <Body width="75" height="50" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="Captain's Cap 1 Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" sourcerect="16,132,76,50" origin="0.5,0.9" />
+      <sprite name="Captain's Cap 1 Wearable" texture="Mods/Black Order Dialogue Mod/Items/headgears_bo.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" sourcerect="16,132,76,50" origin="0.5,0.9" />
       <SkillModifier skillidentifier="helm" skillvalue="10"/>
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
     </Wearable>
   </Item>
-  <Item name="" identifier="captainscap2" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4">
+  <Item name="BO Renegade's Cap" identifier="captainscap2" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4">
     <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
     <Price baseprice="75">
       <Price locationtype="outpost" multiplier="1" minavailable="1"/>
@@ -30,15 +29,15 @@
       <Price locationtype="mine" multiplier="1" minavailable="1"/>
     </Price>
     <Deconstruct time="10"/>
-    <Sprite name="Captain's Cap 2" texture="Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="118,130,68,47" origin="0.5,0.5" />
+    <Sprite name="Captain's Cap 2" texture="Mods/Black Order Dialogue Mod/Items/headgears_bo.png" depth="0.6" sourcerect="118,130,68,47" origin="0.5,0.5" />
     <Body width="75" height="50" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="Captain's Cap 2 Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" sourcerect="118,130,68,47" origin="0.5,1" />
+      <sprite name="Captain's Cap 2 Wearable" texture="Mods/Black Order Dialogue Mod/Items/headgears_bo.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" sourcerect="118,130,68,47" origin="0.5,1" />
       <SkillModifier skillidentifier="helm" skillvalue="10"/>
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
     </Wearable>
   </Item>
-  <Item name="" identifier="captainscap3" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4">
+  <Item name="BO Admiral's Cap" identifier="captainscap3" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4">
     <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
     <Price baseprice="75">
       <Price locationtype="outpost" multiplier="1" minavailable="1"/>
@@ -48,18 +47,18 @@
       <Price locationtype="mine" multiplier="1" minavailable="1"/>
     </Price>
     <Deconstruct time="10"/>
-    <Sprite name="Captain's Cap 3" texture="Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="211,124,82,50" origin="0.5,0.5" />
+    <Sprite name="Captain's Cap 3" texture="Mods/Black Order Dialogue Mod/Items/headgears_bo.png" depth="0.6" sourcerect="211,124,82,50" origin="0.5,0.5" />
     <Body width="75" height="50" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="Captain's Cap 3 Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" sourcerect="211,124,82,50" origin="0.5,1" />
+      <sprite name="Captain's Cap 3 Wearable" texture="Mods/Black Order Dialogue Mod/Items/headgears_bo.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" sourcerect="211,124,82,50" origin="0.5,1" />
       <SkillModifier skillidentifier="helm" skillvalue="10"/>
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
     </Wearable>
   </Item>
-    -->
   <!-- HATS END -->
   <!-- UNIFORMS START -->
-  <Item name="BO Veteran's Jacket" identifier="captainsuniform1_bo" aliases="captainsuniform_bo" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="BO Veteran's Jacket" identifier="captainsuniform1_bo" aliases="captainsuniform_bo" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft"
+  description="A comfortable jacket worn by Black Order veterans.">
     <Price baseprice="200">
       <Price locationtype="outpost" multiplier="1" minavailable="1"/>
       <Price locationtype="city" multiplier="0.9" minavailable="1"/>
@@ -87,7 +86,8 @@
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
     </Wearable>
   </Item>
-  <Item name="BO Renegade's Jacket" identifier="captainsuniform2_bo" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="BO Renegade's Jacket" identifier="captainsuniform2_bo" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft"
+  description="A sharp-looking uniform for Black Order renegades. Those who wear this show no option for peace.">
     <Price baseprice="200">
       <Price locationtype="outpost" multiplier="1" minavailable="1"/>
       <Price locationtype="city" multiplier="0.9" minavailable="1"/>
@@ -115,7 +115,8 @@
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
     </Wearable>
   </Item>
-  <Item name="BO Admiral's Uniform" identifier="captainsuniform3_bo" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="BO Admiral's Uniform" identifier="captainsuniform3_bo" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft"
+  description="A formal uniform worn by distinguished Black Order officers and Commissars, on occasion.">
     <Price baseprice="200">
       <Price locationtype="outpost" multiplier="1" minavailable="1"/>
       <Price locationtype="city" multiplier="0.9" minavailable="1"/>
