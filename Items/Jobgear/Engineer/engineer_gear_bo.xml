@@ -11,7 +11,7 @@
       <Price locationtype="mine" multiplier="1" minavailable="1"/>
     </Price>
     <Deconstruct time="10"/>
-    <InventoryIcon name="Engineer Uniform 1 BO Icon" texture="Mods/Black Order Dialogue Mod/Items/OutfitIcons_bo.png" sourcerect="0,150,128,107" origin="0.5,0.5" />
+    <InventoryIcon name="Engineer Uniform 1 BO Icon" texture="Mods/Black Order Dialogue Mod/Items/Jobgear/OutfitIcons_bo.png" sourcerect="0,150,128,107" origin="0.5,0.5" />
     <Sprite name="Engineer Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="13,446,208,71" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
@@ -43,7 +43,7 @@
       <Price locationtype="mine" multiplier="1" minavailable="1"/>
     </Price>
     <Deconstruct time="10"/>
-    <InventoryIcon name="Engineer Uniform 2 BO Icon" texture="Mods/Black Order Dialogue Mod/Items/OutfitIcons_bo.png" sourcerect="384,27,127,101" origin="0.5,0.5" />
+    <InventoryIcon name="Engineer Uniform 2 BO Icon" texture="Mods/Black Order Dialogue Mod/Items/Jobgear/OutfitIcons_bo.png" sourcerect="384,27,127,101" origin="0.5,0.5" />
     <Sprite name="Engineer Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="227,452,202,65" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
