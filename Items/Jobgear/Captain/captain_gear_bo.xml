@@ -71,7 +71,7 @@
     <!-- Needs change when sprites arrive --> <Sprite name="Captain's Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="8,361,207,79" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Captain's Uniform 1 Torso" texture="captain_torso_[GENDER]_1.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 1 Torso" texture="captain_torso_[GENDER]_1_bo.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Captain's Uniform 1 Right Lower Arm" texture="captain_torso_[GENDER]_1_bo.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Captain's Uniform 1 Left Lower Arm" texture="captain_torso_[GENDER]_1_bo.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Captain's Uniform 1 Right Upper Arm" texture="captain_torso_[GENDER]_1_bo.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
