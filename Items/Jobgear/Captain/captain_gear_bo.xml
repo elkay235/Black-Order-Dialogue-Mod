@@ -11,10 +11,10 @@
       <Price locationtype="mine" multiplier="1" minavailable="1"/>
     </Price>
     <Deconstruct time="10"/>
-    <Sprite name="Captain's Cap 1" texture="Mods/Black Order Dialogue Mod/Items/Jobgear/headgears_bo.png" depth="0.6" sourcerect="15,32,76,50" origin="0.5,0.5" />
+    <Sprite name="Captain's Cap 1" texture="%ModDir%/Items/Jobgear/headgears_bo.png" depth="0.6" sourcerect="15,32,76,50" origin="0.5,0.5" />
     <Body width="75" height="50" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="Captain's Cap 1 Wearable" texture="Mods/Black Order Dialogue Mod/Items/Jobgear/headgears_bo.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" sourcerect="15,32,76,50" origin="0.5,0.9" />
+      <sprite name="Captain's Cap 1 Wearable" texture="%ModDir%/Items/Jobgear/headgears_bo.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" sourcerect="15,32,76,50" origin="0.5,0.9" />
       <SkillModifier skillidentifier="helm" skillvalue="10"/>
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
     </Wearable>
@@ -29,10 +29,10 @@
       <Price locationtype="mine" multiplier="1" minavailable="1"/>
     </Price>
     <Deconstruct time="10"/>
-    <Sprite name="Captain's Cap 2" texture="Mods/Black Order Dialogue Mod/Items/Jobgear/headgears_bo.png" depth="0.6" sourcerect="117,30,76,50" origin="0.5,0.5" />
+    <Sprite name="Captain's Cap 2" texture="%ModDir%/Items/Jobgear/headgears_bo.png" depth="0.6" sourcerect="117,30,76,50" origin="0.5,0.5" />
     <Body width="75" height="50" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="Captain's Cap 2 Wearable" texture="Mods/Black Order Dialogue Mod/Items/Jobgear/headgears_bo.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" sourcerect="117,30,76,50" origin="0.5,1" />
+      <sprite name="Captain's Cap 2 Wearable" texture="%ModDir%/Items/Jobgear/headgears_bo.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" sourcerect="117,30,76,50" origin="0.5,1" />
       <SkillModifier skillidentifier="helm" skillvalue="10"/>
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
     </Wearable>
@@ -47,10 +47,10 @@
       <Price locationtype="mine" multiplier="1" minavailable="1"/>
     </Price>
     <Deconstruct time="10"/>
-    <Sprite name="Captain's Cap 3" texture="Mods/Black Order Dialogue Mod/Items/Jobgear/headgears_bo.png" depth="0.6" sourcerect="210,23,83,53" origin="0.5,0.5" />
+    <Sprite name="Captain's Cap 3" texture="%ModDir%/Items/Jobgear/headgears_bo.png" depth="0.6" sourcerect="210,23,83,53" origin="0.5,0.5" />
     <Body width="75" height="50" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="Captain's Cap 3 Wearable" texture="Mods/Black Order Dialogue Mod/Items/Jobgear/headgears_bo.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" sourcerect="210,23,83,53" origin="0.5,1" />
+      <sprite name="Captain's Cap 3 Wearable" texture="%ModDir%/Items/Jobgear/headgears_bo.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" sourcerect="210,23,83,53" origin="0.5,1" />
       <SkillModifier skillidentifier="helm" skillvalue="10"/>
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
     </Wearable>
@@ -67,7 +67,7 @@
       <Price locationtype="mine" multiplier="1" minavailable="1"/>
     </Price>
     <Deconstruct time="10"/>
-    <InventoryIcon name="Captain's Uniform 1 BO Icon" texture="Mods/Black Order Dialogue Mod/Items/JobGear/OutfitIcons_bo.png" sourcerect="0,27,128,101" origin="0.5,0.5" />
+    <InventoryIcon name="Captain's Uniform 1 BO Icon" texture="%ModDir%/Items/JobGear/OutfitIcons_bo.png" sourcerect="0,27,128,101" origin="0.5,0.5" />
     <!-- Needs change when sprites arrive --> <Sprite name="Captain's Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="8,361,207,79" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
@@ -96,7 +96,7 @@
       <Price locationtype="mine" multiplier="1" minavailable="1"/>
     </Price>
     <Deconstruct time="10"/>
-    <InventoryIcon name="Captain's Uniform 2 Icon" texture="Mods/Black Order Dialogue Mod/Items/JobGear/OutfitIcons_bo.png" sourcerect="128,27,128,101" origin="0.5,0.5" />
+    <InventoryIcon name="Captain's Uniform 2 Icon" texture="%ModDir%/Items/JobGear/OutfitIcons_bo.png" sourcerect="128,27,128,101" origin="0.5,0.5" />
     <!-- Needs change when sprites arrive --> <Sprite name="Captain's Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="224,368,208,71" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
@@ -125,7 +125,7 @@
       <Price locationtype="mine" multiplier="1" minavailable="1"/>
     </Price>
     <Deconstruct time="10"/>
-    <InventoryIcon name="Captain's Uniform 3 Icon" texture="Mods/Black Order Dialogue Mod/Items/JobGear/OutfitIcons_bo.png" sourcerect="255,27,128,101" origin="0.5,0.5" />
+    <InventoryIcon name="Captain's Uniform 3 Icon" texture="%ModDir%/Items/JobGear/OutfitIcons_bo.png" sourcerect="255,27,128,101" origin="0.5,0.5" />
     <!-- Needs change when sprites arrive --> <Sprite name="Captain's Uniform 3" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="442,376,206,63" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">

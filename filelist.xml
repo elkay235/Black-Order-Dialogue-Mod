@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Black Order Dialogue Mod" path="Mods/Black Order Dialogue Mod/filelist.xml" corepackage="false" gameversion="0.14.9.1" steamworkshopid="2619876054" installtime="1633566636">
-  <Text file="Mods/Black Order Dialogue Mod/Texts/English/EnglishOrder.xml" />
-  <NPCConversations file="Mods/Black Order Dialogue Mod/NPCConversations/English/NpcConversations_Order.xml" />
-  <Item file="Mods/Black Order Dialogue Mod/Items/Reactor/Reactor_Order.xml" />
-  <None file="Mods/Black Order Dialogue Mod/Items/Reactor/reactor_ordiumnite_bo.png" />
-  <None file="Mods/Black Order Dialogue Mod/Items/Reactor/reactor_ordiumnite_military_bo.png" />
-  <None file="Mods/Black Order Dialogue Mod/Items/Reactor/fuelrods_inv_bo.png" />
-  <None file="Mods/Black Order Dialogue Mod/Items/Reactor/fuelrods_bo.png" />
+<contentpackage name="Black Order Dialogue Mod" path="%ModDir%/filelist.xml" corepackage="false" gameversion="0.14.9.1" steamworkshopid="2619876054" installtime="1633566636">
+  <Text file="%ModDir%/Texts/English/EnglishOrder.xml" />
+  <NPCConversations file="%ModDir%/NPCConversations/English/NpcConversations_Order.xml" />
+  <Item file="%ModDir%/Items/Reactor/Reactor_Order.xml" />
+  <None file="%ModDir%/Items/Reactor/reactor_ordiumnite_bo.png" />
+  <None file="%ModDir%/Items/Reactor/reactor_ordiumnite_military_bo.png" />
+  <None file="%ModDir%/Items/Reactor/fuelrods_inv_bo.png" />
+  <None file="%ModDir%/Items/Reactor/fuelrods_bo.png" />         
 </contentpackage>
