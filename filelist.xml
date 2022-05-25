@@ -6,5 +6,8 @@
   <None file="%ModDir%/Items/Reactor/reactor_ordiumnite_bo.png" />
   <None file="%ModDir%/Items/Reactor/reactor_ordiumnite_military_bo.png" />
   <None file="%ModDir%/Items/Reactor/fuelrods_inv_bo.png" />
-  <None file="%ModDir%/Items/Reactor/fuelrods_bo.png" />         
-</contentpackage>
+  <None file="%ModDir%/Items/Reactor/fuelrods_bo.png" />   
+  <None file="%ModDir%/Items/Materials/mineral environment_bo.png" />      
+  <None file="%ModDir%/Items/Materials/minerals_bo.png" />  
+  <Item file="%ModDir%/Items/Materials/minerals.xml" />  
+</contentpackage> 
