@@ -1,43 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
 
-    <Item name="Ordiumnite" identifier="ordiumnite_bo" category="Material" Tags="smallitem,ore" maxstacksize="8" canbepicked="true" description="A shard of Ordiumnite, used to craft fuel cells, amongst other things." cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-       
-        <!--
-        <PreferredContainer secondary="locker" />
-        <PreferredContainer primary="mineralcontainer" spawnprobability="0.1" />
-        -->
+// DO THIS
+// USE C:\Program Files (x86)\Steam\steamapps\common\Barotrauma\Content\Items\Materials
+// MINERALS.XML FOR ORE SPAWN
+// MATERIALS.XML FOR HANDHELD ITEM
 
-        <Price baseprice="125" soldeverywhere="false">
-          <Price locationtype="outpost" multiplier="1.1" sold="false" />
-          <Price locationtype="city" multiplier="1.25" sold="false" />
-          <Price locationtype="research" multiplier="1" sold="false" />
-          <Price locationtype="military" multiplier="1.35" sold="true" />
-          <Price locationtype="mine" multiplier="1.2" sold="true" />
-        </Price>
-        <!-- TODO: sprite and inventory icon -->
-        <LightComponent lightcolor="83,160,100,225" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="true">
-          <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
-        </LightComponent>
-        <ContainedSprite texture="%ModDir%/Items/Materials/mineralenvironment_bo.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible"  depth="0.55" sourcerect="0,0,86,147" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/Items/Materials/minerals_bo.png" depth="0.3" sourcerect="0,0,128,128" origin="0.5,0.5" />
-        <DecorativeSprite texture="%ModDir%/Items/Materials/mineralenvironment_bo.png" depth="0.49" sourcerect="853,731,86,147" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
-        <DecorativeSprite texture="%ModDir%/Items/Materials/mineralenvironment_bo.png" depth="0.48" sourcerect="85,0,86,147" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
-        <DecorativeSprite texture="%ModDir%/Items/Materials/mineralenvironment_bo.png" depth="0.51" sourcerect="170,0,86,147" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
-        <DecorativeSprite texture="%ModDir%/Items/Materials/mineralenvironment_bo.png" depth="0.52" sourcerect="85,0,86,147" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
-        <DecorativeSprite texture="%ModDir%/Items/Materials/mineralenvironment_bo.png" depth="0.491" sourcerect="170,0,86,147" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
-        <DecorativeSprite texture="%ModDir%/Items/Materials/mineralenvironment_bo.png" depth="0.53" sourcerect="85,0,86,147" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
-        <DecorativeSprite texture="%ModDir%/Items/Materials/minerals_bo.png" depth="0.4" sourcerect="1000,1000,1000,1000" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" />
-        <Body radius="40" width="20" density="50" />
-        <LevelResource deattachduration="4" randomoffsetfromwall="80">
-          <Commonness commonness="0.25" />
-          <Commonness commonness="0.35" leveltype="ridgebasic" />
-          <Commonness commonness="0.40" leveltype="plateaubasic" />
-          <Commonness commonness="0.75" leveltype="greatseabasic" />
-          <Commonness commonness="0.65" leveltype="wastesbasic" />
-          <RequiredItem items="cuttingequipment" type="Equipped" />
-        </LevelResource>
-        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />
-      </Item>
+<Item name="" identifier="ordiumnite_worldspawn" category="Material" Tags="smallitem,ore" maxstacksize="8" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+  <PreferredContainer secondary="locker" />
+  <PreferredContainer primary="mineralcontainer" spawnprobability="0.1" />
+  <Price baseprice="125" sold="false">
+    <Price storeidentifier="merchantoutpost" multiplier="1.1" />
+    <Price storeidentifier="merchantcity" multiplier="1.25" />
+    <Price storeidentifier="merchantresearch" />
+    <Price storeidentifier="merchantmilitary" />
+    <Price storeidentifier="merchantmine" multiplier="0.75" />
+  </Price>
+  <Deconstruct time="5">
+    <Item identifier="ordiumnite" />
+  </Deconstruct>
+  <LightComponent lightcolor="160,175,187,225" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="true">
+    <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+  </LightComponent>
+  <ContainedSprite texture="Content/Items/Materials/MineralEnvironment.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible"  depth="0.55" sourcerect="938,0,86,147" origin="0.5,0.5" />
+  <Sprite texture="Content/Items/Materials/Minerals.png" depth="0.3" sourcerect="386,6,123,122" origin="0.5,0.5" />
+  <DecorativeSprite texture="%ModDir%/Items/Materials/mineralenvironment_bo.png" depth="0.49" sourcerect="0,0,86,147" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+  <DecorativeSprite texture="%ModDir%/Items/Materials/mineralenvironment_bo.png" depth="0.48" sourcerect="86,0,86,147" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+  <DecorativeSprite texture="%ModDir%/Items/Materials/mineralenvironment_bo.png" depth="0.51" sourcerect="172,0,86,147" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+  <DecorativeSprite texture="Content/Items/Materials/Minerals.png" depth="0.4" sourcerect="810,893,173,131" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" />
+  <Body radius="40" width="20" density="50" />
+  <LevelResource deattachduration="4" randomoffsetfromwall="80">
+    <Commonness commonness="0.70" />
+    <Commonness commonness="0.60" leveltype="ridgebasic" />
+    <Commonness commonness="0.40" leveltype="plateaubasic" />
+    <Commonness commonness="0.30" leveltype="greatseabasic" />
+    <Commonness commonness="0.10" leveltype="wastesbasic" />
+    <RequiredItem items="cuttingequipment" type="Equipped" />
+  </LevelResource>
+  <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />
+</Item>
+
+<Item name="Ordiumnite" identifier="ordiumnite" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+  <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="0.3"/>
+  <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06"/>
+  <PreferredContainer secondary="locker" />
+  <Price baseprice="200" sold="false">
+    <Price storeidentifier="merchantoutpost" multiplier="1.3" />
+    <Price storeidentifier="merchantcity" multiplier="1.25" />
+    <Price storeidentifier="merchantresearch" multiplier="1.1" />
+    <Price storeidentifier="merchantmilitary" multiplier="1.1" />
+    <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="20" />
+  </Price>
+  <InventoryIcon texture="%ModDir%/Items/Materials/minerals_bo.png" sourcerect="0,0,128,128" />
+  <Sprite texture="%ModDir%/Items/Materials/minerals_bo.png" sourcerect="0,0,128,128" depth="0.55" origin="0.5,0.5" />
+  <Body width="45" height="30" density="50" />
+  <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+    <!-- Remove the item when fully used -->
+    <StatusEffect type="OnBroken" target="This">
+      <Remove />
+    </StatusEffect>
+  </Holdable>
+</Item>
 
 </Items>
